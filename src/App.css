@@ -1,0 +1,48 @@
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.intrusive-object {
+  position: fixed;
+  top: 54%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  animation: movement 10s ease-in-out infinite;
+}
+@keyframes movement {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(100%);
+  }
+  25% {
+    transform: translate(-100%, -100%) rotate(360deg) scale(40%);
+  }
+  50% {
+    transform: translate(-90%, -20%) rotate(180deg) scale(50%);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(100%);
+  }
+}
+
+.loading {
+  animation: loading 2s ease-in-out infinite;
+}
+@keyframes loading {
+  0% {
+    opacity: 0% ;
+  }
+  25% {
+    opacity: 50%;
+  }
+  50% {
+    opacity: 75%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
